@@ -1,0 +1,197 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[]{hyperref}
+\hypersetup{
+    colorlinks=true,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=NavyBlue,%
+    urlcolor=NavyBlue,
+    breaklinks=true
+}
+\urlstyle{same}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{gobble} % suppresses page numbering. To stop suppression, change to 'arabic'.
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+
+%%%%%%%% DEFINITIONS FOR CV %%%%%%%%
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[5]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\
+      {\href{mailto:gisella.diaz@psych.ucsb.edu}{gisella.diaz@psych.ucsb.edu}} \\  {#3} \\ {#4} \\ {#5}
+		\end{center}
+	\end{changemargin}
+}
+
+\newcommand{\labdescription}[1]{
+	\begin{changemargin}{0.15in}{0.15in}
+    \smallskip
+		{#1}
+    \medskip
+	\end{changemargin}
+}
+
+\newcommand{\labtitle}[3]{
+	\textbf{#1}, \emph{#2} \hfill \emph{#3}\\
+}
+
+\newcommand{\presentation}[2]{
+	{#1} \hfill \emph{#2}\\ \bigskip
+}
+
+\newcommand{\award}[2]{
+	{#1} \hfill \emph{#2}\\ \medskip
+}
+
+\newcommand{\society}[2]{
+	{#1} \hfill \emph{#2}\\ \medskip
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }
+	{\end{changemargin}
+}
+
+%%%%%%%% END CV DEFINITIONS %%%%%%%%
+
+\begin{document}
+
+%%%% Name %%%%
+
+\contact{Gisella K. Diaz}{}{(661) 229-3085}{6750 El Colegio Road \#232}{Goleta, CA 93117}
+
+%%%% Education %%%%
+
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Bachelor of Arts in Anthropology, Psychology (Double Major)}\emph{, GPA - 3.96} \hfill \emph{August 2012 - Present} \\
+	\emph{University of California, Santa Barbara}, Santa Barbara, CA \\
+	Expected June 2016
+
+\end{body}
+
+\medskip
+
+%%%% Experience %%%%
+
+\header{Research Experience}
+
+\begin{body}
+	\vspace{14pt}
+
+%% Bioarchaeology and Biogeochemistry Lab %%
+  	\labtitle{Research Assistant}{Phillip Lee Walker Bioarchaeology and Biogeochemistry Lab}{January 2015 - Present}
+  \labdescription {
+  	\begin{itemize} \itemsep -0pt  % reduce space between items
+      \item Assist principal investigator, Dr. Danielle Kurin, in conducting collagen extraction from human and animal archaeological bones (from Africa, S. America, and the USA) and apatite extraction from ancient dental enamel to prepare samples for stable isotope analysis to investigate questions of diet and migration.
+  	\end{itemize}
+  }
+
+%% Attention Lab %%
+	\labtitle{Research Assistant}{UCSB Attention Lab}{January 2014 - Present}
+  \labdescription {
+  	\begin{itemize} \itemsep -0pt  % reduce space between items
+      \item Assist principal investigator, Dr. Barry Giesbrecht, and postdoctoral researchers in programming experimental tasks, collecting behavioral and EEG data, organizing and analyzing behavioral data, and completing literature research to investigate the mechanisms of visual selective attention.
+  	\end{itemize}
+  }
+
+
+\end{body}
+
+\medskip
+
+%%%% Presentations %%%%
+
+\header{Presentations}
+
+\begin{body}
+	\vspace{14pt}
+
+\presentation{Diaz, G.K., MacLean M.H., \& Giesbrecht B. Reward-Based Involuntary Capture Interacts with Voluntary Attentional Control During Search. \emph{Vision Sciences Society 15th Annual Meeting}, St. Pete Beach, Florida (Poster Presentation).}{Submitted abstract for May 2015}
+
+\presentation{Diaz, G.K., MacLean M.H., \& Giesbrecht B. The Efficiency of Visual Selective Attention is Modulated by Task Difficulty and Reward. \emph {SACNAS National Conference: Creativity, Vision, and Drive: Toward Full Representation in STEM}, Los Angeles, California (Poster Presentation).}{October 2014}
+
+\presentation{Diaz, G.K., MacLean M.H., \& Giesbrecht B. The Efficiency of Visual Selective Attention is Modulated by Task Difficulty and Reward. \emph {University of California, Santa Barbara: Summer Undergraduate and Graduate Research Colloquium}, Santa Barbara, California (Poster Presentation).}{August 2014}
+
+\presentation{Diaz, G.K., MacLean M.H., \& Giesbrecht B. The Efficiency of Visual Selective Attention is Modulated by Task Difficulty and Reward. \emph {University of California, Santa Barbara: McNair Scholars Summer Research Symposium}, Santa Barbara, California (Oral Presentation).}{August 2014}
+
+\end{body}
+
+\medskip
+
+%%%% Honors & Awards %%%%
+
+\header{Honors \& Awards}
+
+\begin{body}
+	\vspace{14pt}
+
+\award{Isabella Price Scholarship}{Fall 2014 - Spring 2015}
+\award{Kirby-Jones Scholarship}{Fall 2014 - Spring 2015}
+\award{Ronald E. McNair Postbaccalaureate Achievement Program}{Spring 2014 - Present}
+\award{UCSB College of Letters \& Science Honors Program}{Fall 2013 - Present}
+\award{Dean's Honors}{Fall 2012 - Present}
+
+\end{body}
+
+\medskip
+
+%%%% Professional Societies %%%%
+
+\header{Professional Societies}
+
+\begin{body}
+	\vspace{14pt}
+
+\society{Vision Sciences Society}{Fall 2014 - Present}
+\society{Society for the Advancement of Hispanics/Chicanos and Native Americans in Science}{Summer 2014 - Present}
+
+\end{body}
+
+\end{document}
